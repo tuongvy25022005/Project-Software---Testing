@@ -127,6 +127,8 @@ Pass / Fail
 Ghi nhận Bug
        ↓
 Theo dõi Bug trên GitHub Issues
+```
+
 ## 6. Test Case
 
 Tổng cộng **45 Test Case** được xây dựng và thực thi.
@@ -141,8 +143,6 @@ Tổng cộng **45 Test Case** được xây dựng và thực thi.
 | **Tổng cộng** | **45** |
 
 Các Test Case được xây dựng nhằm kiểm tra cả dữ liệu hợp lệ và không hợp lệ, tập trung vào chức năng và validation của hệ thống.
-
----
 
 ## 7. Quản lý Test Case
 
@@ -159,8 +159,6 @@ Các nội dung thực hiện:
 - Cập nhật trạng thái Pass/Fail.
 - Tổng hợp kết quả Test Run.
 
----
-
 ## 8. Kết quả kiểm thử
 
 | Kết quả | Số lượng | Tỷ lệ |
@@ -169,14 +167,9 @@ Các nội dung thực hiện:
 | Failed | 12 | 26,7% |
 | **Tổng cộng** | **45** | **100%** |
 
-Kết quả kiểm thử:
-
-- **33 Test Case Passed**
-- **12 Test Case Failed**
+Kết quả kiểm thử gồm **33 Test Case Passed** và **12 Test Case Failed**.
 
 Các Test Case Failed được sử dụng để ghi nhận và quản lý Bug.
-
----
 
 ## 9. Quản lý Bug
 
@@ -194,8 +187,6 @@ Mỗi Bug Report bao gồm:
 
 **Tổng cộng: 12 Bug**
 
----
-
 ## 10. Phân loại Bug
 
 | Module | Số Bug |
@@ -206,16 +197,12 @@ Mỗi Bug Report bao gồm:
 
 Các lỗi phát hiện chủ yếu liên quan đến việc hệ thống xử lý dữ liệu đầu vào không hợp lệ và chưa kiểm tra đầy đủ các trường thông tin.
 
----
-
 ## 11. Công cụ sử dụng
 
 - **Testiny:** Quản lý và thực thi Test Case.
 - **GitHub Issues:** Ghi nhận và theo dõi Bug.
 - **Google Chrome:** Môi trường thực hiện kiểm thử.
 - **Microsoft Word:** Tổng hợp và trình bày báo cáo.
-
----
 
 ## 12. Kỹ năng thực hành
 
@@ -233,8 +220,6 @@ Thông qua dự án, em đã thực hành:
 - Quản lý Bug bằng GitHub Issues.
 - Sử dụng Testiny để quản lý Test Case và Test Run.
 
----
-
 ## 13. Minh chứng dự án
 
 Repository bao gồm các minh chứng cho quá trình kiểm thử:
@@ -245,8 +230,6 @@ Repository bao gồm các minh chứng cho quá trình kiểm thử:
 - Bug Report.
 - GitHub Issues.
 - Hình ảnh minh chứng quá trình thực hiện Test Case.
-
----
 
 ## 14. Tổng kết
 
@@ -261,4 +244,4 @@ Dự án giúp thực hành quy trình kiểm thử phần mềm từ:
 - **12 Failed**
 - **12 Bug**
 
-Dự án giúp em áp dụng kiến thức **Manual Testing** và **Functional Testing** vào một hệ thống thực tế, đồng thời rèn luyện kỹ năng xây dựng Test Case, thực thi kiểm thử và quản lý Bug.
+Dự án giúp áp dụng kiến thức **Manual Testing** và **Functional Testing** vào hệ thống thực tế, đồng thời rèn luyện kỹ năng xây dựng Test Case, thực thi kiểm thử và quản lý Bug.
