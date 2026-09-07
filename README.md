@@ -1,25 +1,26 @@
 # Project-Software---Testing
+
 # Manual Testing – ParaBank
 
 ## 1. Giới thiệu dự án
 
 Dự án thực hành kiểm thử phần mềm website **ParaBank**, một hệ thống mô phỏng dịch vụ ngân hàng trực tuyến được sử dụng cho mục đích học tập và thực hành kiểm thử phần mềm.
 
-Mục tiêu của dự án là áp dụng quy trình **Manual Testing** và **Functional Testing** để kiểm tra các chức năng của hệ thống, xây dựng Test Case, thực thi kiểm thử, ghi nhận kết quả và quản lý các lỗi phát hiện được.
+Mục tiêu của dự án là áp dụng **Manual Testing** và **Functional Testing** để kiểm tra các chức năng, xây dựng Test Case, thực thi kiểm thử, ghi nhận kết quả và quản lý Bug.
 
 ---
 
 ## 2. Thông tin ứng dụng
 
-**Tên ứng dụng:** ParaBank
+- **Tên ứng dụng:** ParaBank
+- **Loại hệ thống:** Online Banking Demo
+- **URL:** https://parabank.parasoft.com/parabank/
 
-**Loại hệ thống:** Online Banking Demo
+ParaBank mô phỏng các nghiệp vụ cơ bản của ngân hàng trực tuyến như đăng ký tài khoản, đăng nhập, mở tài khoản, chuyển tiền, thanh toán hóa đơn, tra cứu giao dịch và quản lý thông tin khách hàng.
 
-**URL:** https://parabank.parasoft.com/parabank/
+### Phạm vi kiểm thử
 
-ParaBank mô phỏng một số nghiệp vụ cơ bản của ngân hàng trực tuyến như đăng ký tài khoản, đăng nhập, mở tài khoản, chuyển tiền, thanh toán hóa đơn, tra cứu giao dịch và quản lý thông tin khách hàng.
-
-Trong phạm vi dự án, tập trung kiểm thử 3 chức năng:
+Dự án tập trung kiểm thử 3 chức năng:
 
 - Register
 - Open New Account
@@ -30,23 +31,22 @@ Trong phạm vi dự án, tập trung kiểm thử 3 chức năng:
 ## 3. Mục tiêu kiểm thử
 
 - Kiểm tra hoạt động của các chức năng trong phạm vi dự án.
-- Xác minh hệ thống xử lý đúng dữ liệu hợp lệ và không hợp lệ.
-- Kiểm tra việc validate dữ liệu đầu vào.
-- Xác định các trường hợp hệ thống hoạt động không đúng yêu cầu.
-- Ghi nhận và quản lý Bug trong quá trình kiểm thử.
+- Kiểm tra hệ thống xử lý dữ liệu hợp lệ và không hợp lệ.
+- Kiểm tra việc Validate dữ liệu đầu vào.
+- Phát hiện và ghi nhận các lỗi trong quá trình kiểm thử.
+- Theo dõi và quản lý Bug.
 - Tổng hợp và đánh giá kết quả kiểm thử.
 
 ---
 
 ## 4. Phạm vi kiểm thử
 
-### Chức năng được kiểm thử
+### 4.1. Register
 
-#### Register
-Kiểm thử chức năng đăng ký tài khoản, bao gồm:
+Kiểm thử chức năng đăng ký tài khoản:
 
 - Kiểm tra thông tin bắt buộc.
-- Kiểm tra đăng ký với dữ liệu hợp lệ.
+- Đăng ký với dữ liệu hợp lệ.
 - Kiểm tra Username và Password.
 - Kiểm tra Confirm Password.
 - Kiểm tra Username đã tồn tại.
@@ -56,41 +56,37 @@ Kiểm thử chức năng đăng ký tài khoản, bao gồm:
 
 **Số lượng: 20 Test Case**
 
-#### Open New Account
-Kiểm thử chức năng mở tài khoản mới, bao gồm:
+### 4.2. Open New Account
+
+Kiểm thử chức năng mở tài khoản mới:
 
 - Mở tài khoản Checking.
 - Mở tài khoản Savings.
 - Kiểm tra danh sách loại tài khoản.
 - Kiểm tra tài khoản nguồn.
-- Kiểm tra tài khoản mới sau khi tạo.
+- Kiểm tra tài khoản sau khi tạo.
 - Kiểm tra loại tài khoản sau khi tạo.
 
 **Số lượng: 6 Test Case**
 
-#### Bill Pay
-Kiểm thử chức năng thanh toán hóa đơn, bao gồm:
+### 4.3. Bill Pay
 
-- Payee Name.
-- Address.
-- City.
-- State.
-- Zip Code.
-- Phone Number.
-- Account Number.
-- Verify Account.
-- Amount.
-- Số tiền bằng 0.
-- Số tiền âm.
-- Số tiền vượt quá số dư.
-- Dữ liệu chứa ký tự đặc biệt.
-- Dữ liệu không hợp lệ.
+Kiểm thử chức năng thanh toán hóa đơn:
+
+- Kiểm tra Payee Name.
+- Kiểm tra Address, City, State, Zip Code.
+- Kiểm tra Phone Number.
+- Kiểm tra Account Number và Verify Account.
+- Kiểm tra Amount.
+- Kiểm tra số tiền bằng 0.
+- Kiểm tra số tiền âm.
+- Kiểm tra số tiền vượt quá số dư.
+- Kiểm tra dữ liệu không hợp lệ.
+- Kiểm tra dữ liệu chứa ký tự đặc biệt.
 
 **Số lượng: 19 Test Case**
 
-### Chức năng không kiểm thử
-
-Các chức năng sau nằm ngoài phạm vi của dự án:
+### 4.4. Ngoài phạm vi
 
 - Login
 - Transfer Funds
@@ -98,7 +94,7 @@ Các chức năng sau nằm ngoài phạm vi của dự án:
 - Request Loan
 - Update Contact Info
 
-Ngoài ra, dự án không thực hiện:
+Không thực hiện:
 
 - Performance Testing
 - Security Testing
@@ -111,9 +107,7 @@ Ngoài ra, dự án không thực hiện:
 
 ## 5. Phương pháp kiểm thử
 
-Dự án sử dụng:
-
-**Manual Testing + Functional Testing**
+Dự án sử dụng **Manual Testing** kết hợp **Functional Testing**.
 
 Quy trình thực hiện:
 
@@ -122,34 +116,18 @@ Phân tích yêu cầu
        ↓
 Xây dựng Test Case
        ↓
-Chuẩn bị dữ liệu kiểm thử
+Chuẩn bị Test Data
        ↓
-Thực hiện kiểm thử
+Thực thi Test Case
        ↓
-Ghi nhận Test Result
+Ghi nhận Actual Result
        ↓
 Pass / Fail
        ↓
 Ghi nhận Bug
        ↓
 Theo dõi Bug trên GitHub Issues
-## 6. Phương pháp kiểm thử
-
-Dự án sử dụng phương pháp **Manual Testing** và tập trung vào **Functional Testing**.
-
-Quy trình kiểm thử:
-
-- Phân tích yêu cầu và chức năng.
-- Xây dựng Test Case.
-- Chuẩn bị dữ liệu kiểm thử.
-- Thực thi Test Case.
-- Ghi nhận kết quả Pass/Fail.
-- Ghi nhận Bug đối với các Test Case Failed.
-- Theo dõi và quản lý Bug trên GitHub Issues.
-
----
-
-## 7. Test Case
+## 6. Test Case
 
 Tổng cộng **45 Test Case** được xây dựng và thực thi.
 
@@ -162,28 +140,28 @@ Tổng cộng **45 Test Case** được xây dựng và thực thi.
 | Bill Pay | 19 |
 | **Tổng cộng** | **45** |
 
-Các Test Case được thiết kế với cả dữ liệu hợp lệ và không hợp lệ nhằm kiểm tra khả năng xử lý dữ liệu đầu vào của hệ thống.
+Các Test Case được xây dựng nhằm kiểm tra cả dữ liệu hợp lệ và không hợp lệ, tập trung vào chức năng và validation của hệ thống.
 
 ---
 
-## 8. Quản lý Test Case
+## 7. Quản lý Test Case
 
 Test Case được xây dựng và quản lý trên **Testiny**.
 
-Các nội dung được thực hiện:
+Các nội dung thực hiện:
 
-- Xây dựng Test Case theo từng chức năng.
 - Thiết lập Test Case ID.
 - Mô tả điều kiện kiểm thử.
-- Thiết lập Test Data.
-- Ghi nhận Expected Result.
-- Thực hiện kiểm thử và ghi nhận Actual Result.
+- Chuẩn bị Test Data.
+- Xác định Expected Result.
+- Thực thi Test Case.
+- Ghi nhận Actual Result.
 - Cập nhật trạng thái Pass/Fail.
 - Tổng hợp kết quả Test Run.
 
 ---
 
-## 9. Kết quả kiểm thử
+## 8. Kết quả kiểm thử
 
 | Kết quả | Số lượng | Tỷ lệ |
 |---|---:|---:|
@@ -191,15 +169,18 @@ Các nội dung được thực hiện:
 | Failed | 12 | 26,7% |
 | **Tổng cộng** | **45** | **100%** |
 
-Kết quả kiểm thử cho thấy hệ thống có **33 Test Case Passed** và **12 Test Case Failed**.
+Kết quả kiểm thử:
 
-Các Test Case Failed được sử dụng làm cơ sở để ghi nhận và quản lý Bug.
+- **33 Test Case Passed**
+- **12 Test Case Failed**
+
+Các Test Case Failed được sử dụng để ghi nhận và quản lý Bug.
 
 ---
 
-## 10. Quản lý Bug
+## 9. Quản lý Bug
 
-Các lỗi phát hiện trong quá trình kiểm thử được ghi nhận và quản lý bằng **GitHub Issues**.
+Các Bug được phát hiện trong quá trình kiểm thử được ghi nhận và theo dõi bằng **GitHub Issues**.
 
 Mỗi Bug Report bao gồm:
 
@@ -211,11 +192,11 @@ Mỗi Bug Report bao gồm:
 - Severity
 - Status
 
-Tổng cộng **12 Bug** được ghi nhận trong quá trình kiểm thử.
+**Tổng cộng: 12 Bug**
 
 ---
 
-## 11. Phân loại Bug
+## 10. Phân loại Bug
 
 | Module | Số Bug |
 |---|---:|
@@ -223,11 +204,11 @@ Tổng cộng **12 Bug** được ghi nhận trong quá trình kiểm thử.
 | Bill Pay | 9 |
 | **Tổng cộng** | **12** |
 
-Các lỗi chủ yếu liên quan đến việc hệ thống xử lý dữ liệu đầu vào không hợp lệ và chưa kiểm tra đầy đủ các trường thông tin.
+Các lỗi phát hiện chủ yếu liên quan đến việc hệ thống xử lý dữ liệu đầu vào không hợp lệ và chưa kiểm tra đầy đủ các trường thông tin.
 
 ---
 
-## 12. Công cụ sử dụng
+## 11. Công cụ sử dụng
 
 - **Testiny:** Quản lý và thực thi Test Case.
 - **GitHub Issues:** Ghi nhận và theo dõi Bug.
@@ -236,7 +217,7 @@ Các lỗi chủ yếu liên quan đến việc hệ thống xử lý dữ liệ
 
 ---
 
-## 13. Kỹ năng thực hành
+## 12. Kỹ năng thực hành
 
 Thông qua dự án, em đã thực hành:
 
@@ -254,7 +235,7 @@ Thông qua dự án, em đã thực hành:
 
 ---
 
-## 14. Minh chứng dự án
+## 13. Minh chứng dự án
 
 Repository bao gồm các minh chứng cho quá trình kiểm thử:
 
@@ -267,15 +248,17 @@ Repository bao gồm các minh chứng cho quá trình kiểm thử:
 
 ---
 
-## 15. Tổng kết
+## 14. Tổng kết
 
-Dự án giúp thực hành quy trình kiểm thử phần mềm từ **phân tích yêu cầu → xây dựng Test Case → thực thi kiểm thử → ghi nhận kết quả → phát hiện Bug → quản lý Bug**.
+Dự án giúp thực hành quy trình kiểm thử phần mềm từ:
 
-Kết quả dự án gồm:
+**Phân tích yêu cầu → Xây dựng Test Case → Thực thi kiểm thử → Ghi nhận kết quả → Phát hiện Bug → Quản lý Bug**
+
+### Kết quả dự án
 
 - **45 Test Case**
 - **33 Passed**
 - **12 Failed**
 - **12 Bug**
 
-Dự án là cơ sở để áp dụng kiến thức **Manual Testing** vào một hệ thống thực tế và xây dựng portfolio phục vụ vị trí **Tester/QA Intern**.
+Dự án giúp em áp dụng kiến thức **Manual Testing** và **Functional Testing** vào một hệ thống thực tế, đồng thời rèn luyện kỹ năng xây dựng Test Case, thực thi kiểm thử và quản lý Bug.
